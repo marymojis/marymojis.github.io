@@ -9,6 +9,16 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
 </head>
 <body>
 
@@ -17,6 +27,14 @@
   <div class="col">
     <h2>Marymojis</h2>
     <p>Press and hold to copy</p>
+    <button onclick="myFunction()">How to add to home screen?</button>
+    <div id="myDIV" style="display: none">
+      <ul>
+        <li>Tap the share botton at the bottom center of the sceen</li>
+        <li>Swipe down and select Add to Home Screen</li>
+        <li>Tap Add</li>
+      </ul>
+    </div>
   </div>
 </div>
 <div class="row">
